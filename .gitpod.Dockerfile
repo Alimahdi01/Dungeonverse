@@ -10,4 +10,4 @@ RUN sh -c "$(curl -sSfL https://release.solana.com/stable/install)"
 ENV PATH="/home/gitpod/.local/share/solana/install/active_release/bin:${PATH}"
 
 # Install Anchor
-RUN cargo install --git https://github.com/project-serum/anchor --tag v0.24.2 anchor-cli --locked
+RUN source $HOME/.cargo/env && cargo install --git https://github.com/project-serum/anchor --tag v0.24.2 anchor-cli --locked

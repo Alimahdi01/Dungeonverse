@@ -4,6 +4,7 @@ image:
 tasks:
   - name: Verify Installation
     command: |
+      source $HOME/.cargo/env
       rustc --version
       solana --version
       anchor --version

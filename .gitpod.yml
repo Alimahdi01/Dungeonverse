@@ -1,0 +1,9 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: Verify Installation
+    command: |
+      rustc --version
+      solana --version
+      anchor --version
